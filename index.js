@@ -31,6 +31,16 @@ app.get("/posts", (req, res) => {
     res.render("posts.ejs", { posts });
 });
 
+app.get("/post/:id", (req, res) => {
+    const postId = req.params.id;
+    if (posts[postId]) {
+        res.render("post.ejs", { post: posts[postId] });
+    } else {
+        res.status(404).send("Post not found");
+    }
+});
+
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });

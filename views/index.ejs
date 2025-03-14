@@ -1,11 +1,17 @@
 <%- include("partials/header.ejs") %>
-<h1> Oxy Blog Project Main Page </h1>
 
-<p>Welcome to our website! We are excited to have you here. 
-    Whether you're exploring new ideas, looking for inspiration, 
-    or just browsing, we aim to provide an engaging and enjoyable experience. 
-    Take your time to discover everything we have to offer, and don't hesitate to reach out if you have any questions or feedback.
-     Stay tuned for updates, and enjoy your visit!
-</p>
+<div class="homepage-container">
+    <h1>Welcome to Oxy Blog</h1>
+
+    <p class="homepage-text">
+        Discover, share, and create amazing blog posts! Whether you're exploring new ideas, looking for inspiration, 
+        or just browsing, Oxy Blog is your platform for expression.
+    </p>
+
+    <div class="homepage-buttons">
+        <a href="/posts" class="btn">View Posts</a>
+        <a href="/create" class="btn btn-alt">Create a Post</a>
+    </div>
+</div>
 
 <%- include("partials/footer.ejs") %>
